@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.group {
+  margin: 10px;
+}
+.group label {
+  display: block;
+  margin-bottom: 2px;
+}
