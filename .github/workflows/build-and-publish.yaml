@@ -3,9 +3,9 @@ name: Server CI workflow
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   deploy:
     needs: unit-tests
