@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import download, { DownloadOptions } from "../lib/youtubedl";
+import download, { DownloadOptions } from "./lib/youtubedl";
 
 interface VideoRequest extends NextApiRequest {
   query: Partial<DownloadOptions>;
 }
 
-export default async ({ query }: VideoRequest, res: NextApiResponse) => {
+export default async function ({ query }: VideoRequest, res: NextApiResponse) {
   console.info("Requested URL:", query.url);
   const video = await download(query as DownloadOptions);
   const filename = `${video.info.videoDetails.title}-${query.quality}.${video.format.container}`;
