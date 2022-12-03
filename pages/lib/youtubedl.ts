@@ -41,7 +41,7 @@ function bestFormat(info: ytdl.videoInfo, format: Format, quality: Quality) {
   return bestMatch;
 }
 
-function toMatchingFormats(info: ytdl.videoInfo, format: string) {
+function toMatchingFormats(info: ytdl.videoInfo, format: Format) {
   const matchingFormats = info.formats.filter((f) => isFormatAMatch(f, format));
   console.info(
     `Found ${matchingFormats.length} matching formats for '${format}'`
