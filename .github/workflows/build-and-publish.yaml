@@ -28,6 +28,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      
+      - name: Create Docker context
+        run: docker context create gha-context
+
+      - name: Use Docker context
+        run: docker context use gha-context
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
