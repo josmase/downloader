@@ -11,7 +11,7 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: registry.staging.local.hejsan.xyz
+  REGISTRY: registry.local.hejsan.xyz
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
