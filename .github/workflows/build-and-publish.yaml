@@ -17,7 +17,7 @@ env:
 
 jobs:
   build:
-    runs-on: my-runners
+    runs-on: self-hosted
     permissions:
       contents: read
       packages: write
