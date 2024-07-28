@@ -12,7 +12,6 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ${{vars.REGISTRY_URL}}
-  REGISTRY_PROXY: ${{vars.REGISTRY_PROXY}}
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
 
@@ -27,13 +26,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-      - name: Use a mirror for docker.io to reduce number of calls to docker.io
-        if: env.REGISTRY_PROXY != ''
-        uses: docker/setup-buildx-action@v3
-        with:
-          buildkitd-config-inline: |
-            [registry."docker.io"]
-              mirrors = ["${{ env.REGISTRY_PROXY }}"]
       - name: Log in to ${{ env.REGISTRY }}
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         with:
