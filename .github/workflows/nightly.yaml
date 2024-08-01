@@ -1,4 +1,4 @@
-name: Daily Patch Version Bump
+name: Mightly Patch Version Bump
 
 on:
   schedule:
