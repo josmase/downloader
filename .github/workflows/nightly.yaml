@@ -10,6 +10,11 @@ jobs:
     runs-on: downloader
 
     steps:
+      - name: Ensure Git is installed
+        run: |
+          apt-get update
+          apt-get install -y git
+
       - name: Check out the repository
         uses: actions/checkout@v4
 
