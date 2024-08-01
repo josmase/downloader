@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-changes-and-tag:
-    runs-on: ubuntu-latest
+    runs-on: downloader
 
     steps:
       - name: Check out the repository
@@ -67,6 +67,8 @@ jobs:
           else
             echo "Changes detected."
             echo "changes_detected=true" >> $GITHUB_ENV
+            # Save changes to a file for later use
+            echo "$changes" > changes.txt
           fi
 
       - name: Bump version, update changelog, and commit
@@ -85,11 +87,11 @@ jobs:
             patch=$((patch + 1))
             new_version="v${major}.${minor}.${patch}"
           fi
-          echo "new_version=$new_version" >> $GITHUB_ENV
           # Update CHANGELOG.md
           echo "## $new_version" >> CHANGELOG.md
           echo "" >> CHANGELOG.md
-          echo "$changes" >> CHANGELOG.md
+          # Append changes from the file
+          cat changes.txt >> CHANGELOG.md
           echo "" >> CHANGELOG.md
           # Verify CHANGELOG.md content
           cat CHANGELOG.md
