@@ -7,16 +7,18 @@ on:
 
 jobs:
   check-changes-and-tag:
-    runs-on: downloader
+    runs-on: ubuntu-latest
 
     steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history, including tags
+
       - name: Ensure Git is installed
         run: |
           sudo apt-get update
           sudo apt-get install -y git
-
-      - name: Check out the repository
-        uses: actions/checkout@v4
 
       - name: Set up Git
         run: |
