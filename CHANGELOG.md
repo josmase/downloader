@@ -72,3 +72,11 @@ c5e65d2 Remove dependabot as it is handled by renovate bot
 ccda471 Add renovate.json
 242a74d Don't export to cache
 
+## v0.0.2
+
+5245433 Update tag check
+3cda1cc Bump version to v0.0.1
+a14fff2 Ensure actually in a git folder
+881ae3e Ensure changes are commited to changelog
+e6aae03 Include tags when checking out repo
+
