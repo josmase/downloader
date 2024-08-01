@@ -96,7 +96,9 @@ jobs:
           echo "## $new_version" >> CHANGELOG.md
           echo "" >> CHANGELOG.md
           # Append changes from the file
-          cat changes.txt >> CHANGELOG.md
+          while IFS= read -r line; do
+            echo "$line" >> CHANGELOG.md
+          done < changes.txt
           echo "" >> CHANGELOG.md
           # Verify CHANGELOG.md content
           cat CHANGELOG.md
