@@ -1,0 +1,67 @@
+name: Daily Patch Version Bump
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs once a day at midnight UTC
+  workflow_dispatch: # manual trigger
+
+jobs:
+  check-changes-and-tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+      - name: Get the latest tag
+        id: get-latest-tag
+        run: |
+          latest_tag=$(git describe --tags --abbrev=0)
+          echo "latest_tag=$latest_tag" >> $GITHUB_ENV
+
+      - name: Get the latest commit for the latest tag
+        id: get-latest-tag-commit
+        run: |
+          latest_tag_commit=$(git rev-list -n 1 ${{ env.latest_tag }})
+          echo "latest_tag_commit=$latest_tag_commit" >> $GITHUB_ENV
+
+      - name: Check for changes since the latest tag
+        id: check-changes
+        run: |
+          changes=$(git log ${{ env.latest_tag_commit }}..HEAD --oneline)
+          if [ -z "$changes" ]; then
+            echo "No changes since the last tag."
+            echo "changes_detected=false" >> $GITHUB_ENV
+          else
+            echo "Changes detected."
+            echo "changes_detected=true" >> $GITHUB_ENV
+          fi
+
+      - name: Bump version, update changelog, and commit
+        if: env.changes_detected == 'true'
+        run: |
+          latest_tag=${{ env.latest_tag }}
+          # Extract the version components
+          IFS='.' read -r -a version_parts <<< "${latest_tag#v}"
+          major=${version_parts[0]}
+          minor=${version_parts[1]}
+          patch=${version_parts[2]}
+          # Increment the patch version
+          patch=$((patch + 1))
+          new_version="v${major}.${minor}.${patch}"
+          echo "new_version=$new_version" >> $GITHUB_ENV
+          # Update CHANGELOG.md
+          echo "## $new_version" >> CHANGELOG.md
+          echo "" >> CHANGELOG.md
+          echo "$changes" >> CHANGELOG.md
+          echo "" >> CHANGELOG.md
+          # Commit the version bump and changelog
+          git add CHANGELOG.md
+          git commit --allow-empty -m "Bump version to $new_version"
+          git tag $new_version
+          git push origin main --tags
