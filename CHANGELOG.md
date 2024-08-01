@@ -80,3 +80,7 @@ a14fff2 Ensure actually in a git folder
 881ae3e Ensure changes are commited to changelog
 e6aae03 Include tags when checking out repo
 
+## v0.0.3
+
+d8d9643 Add changes line by line
+
