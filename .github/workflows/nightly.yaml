@@ -18,7 +18,7 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 40 # Includes tags
+          fetch-depth: 0 # Fetch all history, including tags. Not good for large repos.
 
       - name: Set up Git
         run: |
@@ -28,7 +28,12 @@ jobs:
       - name: Check if there are any tags
         id: check-tags
         run: |
+          echo "Fetching all tags..."
+          git fetch --tags
+          echo "Listing all tags..."
+          git tag -l
           tag_count=$(git tag -l | wc -l)
+          echo "Number of tags: $tag_count"
           if [ "$tag_count" -eq 0 ]; then
             echo "No tags found."
             echo "no_tags=true" >> $GITHUB_ENV
