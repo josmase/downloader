@@ -98,6 +98,7 @@ jobs:
           # Append changes from the file
           while IFS= read -r line; do
             echo "$line" >> CHANGELOG.md
+            echo "" >> CHANGELOG.md
           done < changes.txt
           echo "" >> CHANGELOG.md
           # Verify CHANGELOG.md content
