@@ -51,3 +51,7 @@
 - 014ad5d Fix type error
 - cbca2cc Test disabling lib6-compat to fix hanging pipeline
 - 5934512 init commit
+## v0.0.2
+
+* 3758099 Remove newline at end of changelog
+
