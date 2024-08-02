@@ -19,6 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history, including tags. Not good for large repos.
+          token: ${{ secrets.AUTO_DEPLOY_PAT }}
 
       - name: Set up Git
         run: |
