@@ -3,11 +3,7 @@ name: Docker
 on:
   push:
     tags:
-      - "v*.*.*" # Trigger on semver tags
-  pull_request:
-    branches:
-      - "main" # Trigger on pull requests to the main branch
-  workflow_dispatch: # Manual trigger
+      - "v*.*.*"
 
 jobs:
   build:
@@ -18,36 +14,8 @@ jobs:
       attestations: write
       id-token: write
     steps:
-      - name: Ensure Git is installed
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y git
-
       - name: Check out the repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetch all history, including tags. Not good for large repos.
-
-      - name: Extract Semver Tag
-        id: extract-tag
-        run: |
-          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/v* ]]; then
-            echo "TAG=${{ github.ref }}" >> $GITHUB_ENV
-          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo "Fetching all tags..."
-            git fetch --tags  
-            # Fetch the latest tag, if any
-            latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
-            if [[ -n "$latest_tag" ]]; then
-              echo "TAG=$latest_tag" >> $GITHUB_ENV
-            else
-              echo "No tags found."
-              echo "TAG=" >> $GITHUB_ENV
-            fi
-          else
-            echo "No semver tag detected."
-            echo "TAG=" >> $GITHUB_ENV
-          fi
 
       - name: Log in to ${{ vars.REGISTRY_URL }}
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
@@ -62,7 +30,7 @@ jobs:
         with:
           images: ${{ vars.REGISTRY_URL }}/${{ github.repository }}
           tags: |
-            type=version,value=${{ env.TAG || 'latest' }}
+            type=semver,pattern={{version}}
 
       - name: Build and push Docker image
         id: push
@@ -70,12 +38,11 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: ${{ env.TAG != '' }}
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
-        if: ${{ env.TAG != '' }}
         uses: actions/attest-build-provenance@v1
         with:
           subject-name: ${{ vars.REGISTRY_URL }}/${{ github.repository }}
