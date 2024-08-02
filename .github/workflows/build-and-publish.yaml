@@ -18,6 +18,11 @@ jobs:
       attestations: write
       id-token: write
     steps:
+      - name: Ensure Git is installed
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git
+
       - name: Check out the repo
         uses: actions/checkout@v4
         with:
@@ -29,6 +34,8 @@ jobs:
           if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/v* ]]; then
             echo "TAG=${{ github.ref }}" >> $GITHUB_ENV
           elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Fetching all tags..."
+            git fetch --tags  
             # Fetch the latest tag, if any
             latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
             if [[ -n "$latest_tag" ]]; then
