@@ -28,6 +28,15 @@ jobs:
         run: |
           if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/v* ]]; then
             echo "TAG=${{ github.ref }}" >> $GITHUB_ENV
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            # Fetch the latest tag, if any
+            latest_tag=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+            if [[ -n "$latest_tag" ]]; then
+              echo "TAG=$latest_tag" >> $GITHUB_ENV
+            else
+              echo "No tags found."
+              echo "TAG=" >> $GITHUB_ENV
+            fi
           else
             echo "No semver tag detected."
             echo "TAG=" >> $GITHUB_ENV
