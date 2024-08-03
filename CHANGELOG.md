@@ -55,3 +55,8 @@
 
 * 3758099 Remove newline at end of changelog
 
+## v0.0.3
+
+* 1d4d74f Update dependency @types/node to v22.1.0
+* ee7cc22 Update dependency @types/node to v22.0.3
+
