@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-changes-and-tag:
-    uses: josmase/workflows/check-changes-and-tag.yaml@main
+    uses: josmase/workflows/.github/workflows/check-changes-and-tag.yaml@main
     with:
       token: ${{ secrets.AUTO_DEPLOY_PAT }}
       runner: downloader

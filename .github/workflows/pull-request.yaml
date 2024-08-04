@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    uses: josmase/workflows/docker-build.yaml@main
+    uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
       runner: downloader
       registry_url: ${{ vars.REGISTRY_URL }}
