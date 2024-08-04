@@ -3,31 +3,15 @@ name: Pull Request Validation
 on:
   pull_request:
     branches:
-      - "main" # Trigger on pull requests to the main branch
+      - "main"
 
 jobs:
   build:
-    runs-on: downloader
-    permissions:
-      packages: write
-      contents: read
-      attestations: write
-      id-token: write
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v4
-
-      - name: Log in to ${{ vars.REGISTRY_URL }}
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-        with:
-          registry: ${{ vars.REGISTRY_URL }}
-          username: ${{ secrets.REGISTRY_USERNAME }}
-          password: ${{ secrets.REGISTRY_PASSWORD }}
-
-      - name: Build and push Docker image
-        id: push
-        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
-        with:
-          context: .
-          file: ./Dockerfile
-          push: false
+    uses: https://github.com/josmase/workflows/docker-build.yaml
+    with:
+      runner: downloader
+      registry_url: ${{ vars.REGISTRY_URL }}
+      registry_username: ${{ secrets.REGISTRY_USERNAME }}
+      registry_password: ${{ secrets.REGISTRY_PASSWORD }}
+      dockerfile: ./Dockerfile
+      context: .
