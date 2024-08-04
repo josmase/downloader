@@ -7,11 +7,9 @@ on:
 
 jobs:
   build:
-    uses: https://github.com/josmase/workflows/docker-build.yaml
+    uses: josmase/workflows/docker-build.yaml@main
     with:
       runner: downloader
       registry_url: ${{ vars.REGISTRY_URL }}
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
       registry_password: ${{ secrets.REGISTRY_PASSWORD }}
-      dockerfile: ./Dockerfile
-      context: .

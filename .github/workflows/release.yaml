@@ -7,10 +7,10 @@ on:
 
 jobs:
   build:
-    uses: https://github.com/josmase/workflows/docker-build-and-push.yaml
+    uses: josmase/workflows/docker-build-and-push.yaml@main
     with:
       runner: downloader
       registry_url: ${{ vars.REGISTRY_URL }}
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
       registry_password: ${{ secrets.REGISTRY_PASSWORD }}
-      image-name: ${{ github.repository }}
+      image_name: ${{ github.repository }}
