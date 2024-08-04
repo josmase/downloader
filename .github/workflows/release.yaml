@@ -11,6 +11,7 @@ jobs:
     with:
       runner: downloader
       registry_url: ${{ vars.REGISTRY_URL }}
+      image_name: ${{ github.repository }}
+    secrets:
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
       registry_password: ${{ secrets.REGISTRY_PASSWORD }}
-      image_name: ${{ github.repository }}
