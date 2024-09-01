@@ -9,7 +9,7 @@ jobs:
   build:
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
-      runner: downloader
+      runner: my-runner
       registry_url: ${{ vars.REGISTRY_URL }}
     secrets:
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
