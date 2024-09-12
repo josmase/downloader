@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: pull-request-validation
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
       runner: ${{ vars.RUNNER_NAME }}
