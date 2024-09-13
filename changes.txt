@@ -1,0 +1,7 @@
+fc2bf96 Update dependency eslint-config-next to v14.2.11
+5e097ba Update dependency @types/node to v22.5.4
+de6c456 Merge pull request #36 from josmase/renovate/eslint-9.x
+382709c Update dependency eslint to v9.10.0
+afc614c Update dependency next to v14.2.11
+1481fc0 Update dependency @types/react to v18.3.5
+0833d7e Update dependency typescript to v5.6.2
