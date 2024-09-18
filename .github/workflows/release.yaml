@@ -5,9 +5,10 @@ on:
     tags:
       - "v*.*.*"
     branches:
-          - main
+      - main
 jobs:
-  build:
+  release-image:
+    if: github.ref == 'refs/heads/main' && startsWith(github.ref, 'refs/tags/')
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
       runner: ${{ vars.RUNNER_NAME }}
