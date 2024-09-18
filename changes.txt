@@ -1,3 +1,8 @@
+ce7603a Update dependency eslint-config-next to v14.2.12
+aea9e47 Update dependency @types/react to v18.3.7
+1e164df Update dependency @types/react to v18.3.6
+1bf3480 Update dependency @types/node to v22.5.5
+68af498 [create-pull-request] automated change
 fc2bf96 Update dependency eslint-config-next to v14.2.11
 5e097ba Update dependency @types/node to v22.5.4
 de6c456 Merge pull request #36 from josmase/renovate/eslint-9.x
