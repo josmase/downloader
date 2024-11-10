@@ -1,3 +1,12 @@
+3cc6d11 Merge pull request #52 from josmase/renovate/eslint-9.x
+410aaad Merge pull request #51 from josmase/renovate/next-14.x
+59c8922 Update dependency eslint to v9.12.0
+81c1a2e Update dependency @types/react to v18.3.11
+2fed43e Update dependency next to v14.2.14
+d0fa88e Update dependency eslint-config-next to v14.2.14
+e914575 Merge pull request #48 from josmase/release-v0.0.4
+5d1fb24 Update dependency next to v14.2.12
+8668517 [create-pull-request] automated change
 ce7603a Update dependency eslint-config-next to v14.2.12
 aea9e47 Update dependency @types/react to v18.3.7
 1e164df Update dependency @types/react to v18.3.6
