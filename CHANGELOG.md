@@ -1,33 +1,42 @@
 ## 0.0.4
 
-* 1bccdc9 Bump version to v0.0.4
-* 7f725d2 Remove changes.txt
-* c9a2a14 [create-pull-request] automated change
-* 47f5549 Use new registry
-* 8d0f2c4 Merge pull request #53 from josmase/renovate/node-22.x
-* 59e13fb Update dependency @types/node to v22.9.0
-* 6109173 Update dependency @types/react-dom to v18.3.1
-* 3cc6d11 Merge pull request #52 from josmase/renovate/eslint-9.x
-* 410aaad Merge pull request #51 from josmase/renovate/next-14.x
-* 59c8922 Update dependency eslint to v9.12.0
-* 81c1a2e Update dependency @types/react to v18.3.11
-* 2fed43e Update dependency next to v14.2.14
-* d0fa88e Update dependency eslint-config-next to v14.2.14
-* e914575 Merge pull request #48 from josmase/release-v0.0.4
-* 5d1fb24 Update dependency next to v14.2.12
-* 8668517 [create-pull-request] automated change
-* ce7603a Update dependency eslint-config-next to v14.2.12
-* aea9e47 Update dependency @types/react to v18.3.7
-* 1e164df Update dependency @types/react to v18.3.6
-* 1bf3480 Update dependency @types/node to v22.5.5
-* 68af498 [create-pull-request] automated change
-* fc2bf96 Update dependency eslint-config-next to v14.2.11
-* 5e097ba Update dependency @types/node to v22.5.4
-* de6c456 Merge pull request #36 from josmase/renovate/eslint-9.x
-* 382709c Update dependency eslint to v9.10.0
-* afc614c Update dependency next to v14.2.11
-* 1481fc0 Update dependency @types/react to v18.3.5
-* 0833d7e Update dependency typescript to v5.6.2
+- 1bccdc9 Bump version to v0.0.4
+- 7f725d2 Remove changes.txt
+- c9a2a14 [create-pull-request] automated change
+- 47f5549 Use new registry
+- 8d0f2c4 Merge pull request #53 from josmase/renovate/node-22.x
+- 59e13fb Update dependency @types/node to v22.9.0
+- 6109173 Update dependency @types/react-dom to v18.3.1
+- 3cc6d11 Merge pull request #52 from josmase/renovate/eslint-9.x
+- 410aaad Merge pull request #51 from josmase/renovate/next-14.x
+- 59c8922 Update dependency eslint to v9.12.0
+- 81c1a2e Update dependency @types/react to v18.3.11
+- 2fed43e Update dependency next to v14.2.14
+- d0fa88e Update dependency eslint-config-next to v14.2.14
+- e914575 Merge pull request #48 from josmase/release-v0.0.4
+- 5d1fb24 Update dependency next to v14.2.12
+- 8668517 [create-pull-request] automated change
+- ce7603a Update dependency eslint-config-next to v14.2.12
+- aea9e47 Update dependency @types/react to v18.3.7
+- 1e164df Update dependency @types/react to v18.3.6
+- 1bf3480 Update dependency @types/node to v22.5.5
+- 68af498 [create-pull-request] automated change
+- fc2bf96 Update dependency eslint-config-next to v14.2.11
+- 5e097ba Update dependency @types/node to v22.5.4
+- de6c456 Merge pull request #36 from josmase/renovate/eslint-9.x
+- 382709c Update dependency eslint to v9.10.0
+- afc614c Update dependency next to v14.2.11
+- 1481fc0 Update dependency @types/react to v18.3.5
+- 0833d7e Update dependency typescript to v5.6.2
+
+## v0.0.3
+
+- 1d4d74f Update dependency @types/node to v22.1.0
+- ee7cc22 Update dependency @types/node to v22.0.3
+
+## v0.0.2
+
+- 3758099 Remove newline at end of changelog
 
 ## v0.0.1
 
@@ -82,41 +91,3 @@
 - 014ad5d Fix type error
 - cbca2cc Test disabling lib6-compat to fix hanging pipeline
 - 5934512 init commit
-## v0.0.2
-
-* 3758099 Remove newline at end of changelog
-
-## v0.0.3
-
-* 1d4d74f Update dependency @types/node to v22.1.0
-* ee7cc22 Update dependency @types/node to v22.0.3
-
-## v0.0.4
-
-* 7f725d2 Remove changes.txt
-* c9a2a14 [create-pull-request] automated change
-* 47f5549 Use new registry
-* 8d0f2c4 Merge pull request #53 from josmase/renovate/node-22.x
-* 59e13fb Update dependency @types/node to v22.9.0
-* 6109173 Update dependency @types/react-dom to v18.3.1
-* 3cc6d11 Merge pull request #52 from josmase/renovate/eslint-9.x
-* 410aaad Merge pull request #51 from josmase/renovate/next-14.x
-* 59c8922 Update dependency eslint to v9.12.0
-* 81c1a2e Update dependency @types/react to v18.3.11
-* 2fed43e Update dependency next to v14.2.14
-* d0fa88e Update dependency eslint-config-next to v14.2.14
-* e914575 Merge pull request #48 from josmase/release-v0.0.4
-* 5d1fb24 Update dependency next to v14.2.12
-* 8668517 [create-pull-request] automated change
-* ce7603a Update dependency eslint-config-next to v14.2.12
-* aea9e47 Update dependency @types/react to v18.3.7
-* 1e164df Update dependency @types/react to v18.3.6
-* 1bf3480 Update dependency @types/node to v22.5.5
-* 68af498 [create-pull-request] automated change
-* fc2bf96 Update dependency eslint-config-next to v14.2.11
-* 5e097ba Update dependency @types/node to v22.5.4
-* de6c456 Merge pull request #36 from josmase/renovate/eslint-9.x
-* 382709c Update dependency eslint to v9.10.0
-* afc614c Update dependency next to v14.2.11
-* 1481fc0 Update dependency @types/react to v18.3.5
-* 0833d7e Update dependency typescript to v5.6.2
