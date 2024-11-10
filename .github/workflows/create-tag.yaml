@@ -1,0 +1,16 @@
+name: Create tag on release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - CHANGELOG.md
+
+jobs:
+  create-tag:
+    uses: josmase/workflows/.github/workflows/automatic-tag.yaml@main
+    with:
+      runner: ${{ vars.RUNNER_NAME }}
+    secrets:
+      token: ${{ secrets.AUTO_DEPLOY_PAT }}

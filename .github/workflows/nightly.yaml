@@ -6,8 +6,8 @@ on:
   workflow_dispatch: # manual trigger
 
 jobs:
-  check-changes-and-tag:
-    uses: josmase/workflows/.github/workflows/check-changes-and-tag.yaml@main
+  automatic-changelog:
+    uses: josmase/workflows/.github/workflows/automatic-changelog.yaml@main
     with:
       runner: ${{ vars.RUNNER_NAME }}
     secrets:
