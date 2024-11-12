@@ -1,3 +1,8 @@
+## 0.0.5
+
+* d1aac06 chore(deps): update dependency @types/react to v18.3.12
+* 57a5422 Remove library from image path
+
 ## 0.0.4
 
 - 1bccdc9 Bump version to v0.0.4
