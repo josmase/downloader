@@ -1,3 +1,11 @@
+## 0.0.5
+
+* 5568a67 chore(deps): update dependency next to v14.2.18
+* f12172c Merge pull request #65 from josmase/renovate/typescript-5.x
+* d1aac06 chore(deps): update dependency @types/react to v18.3.12
+* 57a5422 Remove library from image path
+* a956f66 chore(deps): update dependency typescript to v5.6.3
+
 ## 0.0.4
 
 - 1bccdc9 Bump version to v0.0.4
