@@ -1,5 +1,23 @@
 ## 0.0.5
 
+* 870faf6 chore(deps): update dependency eslint to v9.15.0
+* 6243a0b Merge pull request #67 from josmase/renovate/eslint-config-next-15.x
+* 8fa098a chore(deps): update dependency @types/node to v22.9.1
+* 714c59b chore(deps): update dependency eslint-config-next to v15
+* 9f624e7 Merge pull request #68 from josmase/renovate/next-15.x
+* 493183a Merge pull request #71 from josmase/release-0.0.5
+* c6dcc76 Merge pull request #72 from josmase/renovate/artifactory.local.hejsan.xyz-docker-node-23.x
+* 7a4bea7 Update changelog for 0.0.5
+* 8180eba chore(deps): update dependency next to v15
+* 5568a67 chore(deps): update dependency next to v14.2.18
+* e9dc634 chore(deps): update artifactory.local.hejsan.xyz/docker/node docker tag to v23
+* f12172c Merge pull request #65 from josmase/renovate/typescript-5.x
+* d1aac06 chore(deps): update dependency @types/react to v18.3.12
+* 57a5422 Remove library from image path
+* a956f66 chore(deps): update dependency typescript to v5.6.3
+
+## 0.0.5
+
 * 5568a67 chore(deps): update dependency next to v14.2.18
 * f12172c Merge pull request #65 from josmase/renovate/typescript-5.x
 * d1aac06 chore(deps): update dependency @types/react to v18.3.12
