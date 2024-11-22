@@ -8,7 +8,5 @@ on:
 jobs:
   automatic-changelog:
     uses: josmase/workflows/.github/workflows/automatic-changelog.yaml@main
-    with:
-      runner: ${{ vars.RUNNER_NAME }}
     secrets:
       token: ${{ secrets.AUTO_DEPLOY_PAT }}
