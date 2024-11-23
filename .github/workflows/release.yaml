@@ -31,7 +31,7 @@ jobs:
       kind: deployment
       name: downloader
     secrets:
-      github-token: ${{ secrets.GITHUB_TOKEN }}
+      github-token: ${{ secrets.AUTO_DEPLOY_PAT }}
       kubeconfig: ${{ secrets.KUBECONFIG }}
     permissions:
       contents: read
