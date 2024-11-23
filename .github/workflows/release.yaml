@@ -5,7 +5,7 @@ on:
     tags:
       - "v*.*.*"
 jobs:
-  publish-image:
+  publish:
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
       registry_url: ${{ vars.REGISTRY_URL }}
@@ -18,3 +18,21 @@ jobs:
     permissions:
       contents: read
       attestations: write
+
+  deploy:
+    needs: publish
+    uses: josmase/workflows/.github/workflows/deploy.yaml@main
+    with:
+      image-version: ${{ github.ref_name }}
+      image-name: ${{ github.repository }}
+      file-path: apps/production/downloader/deployment.yaml
+      repository: josmase/flux
+      namespace: default
+      kind: deployment
+      name: downloader
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      kubeconfig: ${{ secrets.KUBECONFIG }}
+    permissions:
+      contents: read
+      deployments: write
