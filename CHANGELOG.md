@@ -1,3 +1,9 @@
+## 0.0.6
+
+* 14c33a4 Merge pull request #76 from josmase/renovate/typescript-5.x
+* 73145d1 chore(deps): update dependency @types/node to v22.10.0
+* 501a66f chore(deps): update dependency typescript to v5.7.2
+
 ## 0.0.5
 
 * 870faf6 chore(deps): update dependency eslint to v9.15.0
