@@ -1,3 +1,11 @@
+## 0.0.7
+
+* 154836b Merge pull request #80 from josmase/renovate/pin-dependencies
+* daefa26 Merge pull request #78 from josmase/renovate/node-22.x
+* f0f21df chore(deps): pin dependencies
+* 3c64fa5 fix(deps): update dependency eslint to v9.16.0 (#81)
+* 9304976 chore(deps): update dependency @types/node to v22.10.1
+
 ## 0.0.6
 
 * 14c33a4 Merge pull request #76 from josmase/renovate/typescript-5.x
