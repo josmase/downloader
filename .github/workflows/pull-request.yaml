@@ -11,6 +11,7 @@ jobs:
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
     with:
       registry_url: ${{ vars.REGISTRY_URL }}
+      registry_cache_url: ${{ vars.REGISTRY_CACHE_URL }}
       name: ${{ github.repository }}
     secrets:
       registry_username: ${{ secrets.REGISTRY_USERNAME }}
