@@ -1,3 +1,7 @@
+## 0.0.8
+
+* 6455003 fix(deps): update nextjs monorepo to v15.0.4 (#89)
+
 ## 0.0.7
 
 * 154836b Merge pull request #80 from josmase/renovate/pin-dependencies
