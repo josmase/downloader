@@ -1,3 +1,9 @@
+## 0.0.8
+
+* 90cdd9f Merge pull request #86 from josmase/renovate/react-dom-18.x
+* 6455003 fix(deps): update nextjs monorepo to v15.0.4 (#89)
+* ba8a9a1 chore(deps): update dependency @types/react-dom to v18.3.2
+
 ## 0.0.7
 
 * 154836b Merge pull request #80 from josmase/renovate/pin-dependencies
