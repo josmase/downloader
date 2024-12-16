@@ -1,3 +1,13 @@
+## 0.0.8
+
+* 65609d5 fix(deps): update dependency eslint to v9.17.0 (#97)
+* 29a155b fix(deps): update react monorepo (#90)
+* 2edec5c fix(deps): update dependency @types/node to v22.10.2 (#95)
+* 835bfed chore(deps): update node.js to d319827 (#94)
+* 90cdd9f Merge pull request #86 from josmase/renovate/react-dom-18.x
+* 6455003 fix(deps): update nextjs monorepo to v15.0.4 (#89)
+* ba8a9a1 chore(deps): update dependency @types/react-dom to v18.3.2
+
 ## 0.0.7
 
 * 154836b Merge pull request #80 from josmase/renovate/pin-dependencies
