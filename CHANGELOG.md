@@ -1,3 +1,10 @@
+## 0.0.9
+
+* 0423549 fix(deps): update dependency @types/react to v19.0.2 (#99)
+* bb126dd fix(deps): update nextjs monorepo to v15.1.1 (#96)
+* 11abf6b Merge pull request #91 from josmase/renovate/major-react-monorepo
+* f36216f fix(deps): update react monorepo to v19
+
 ## 0.0.8
 
 * 65609d5 fix(deps): update dependency eslint to v9.17.0 (#97)
