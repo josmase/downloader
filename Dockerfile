@@ -1,5 +1,5 @@
 # Install dependencies only when needed
-FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:c61b6b12a3c96373673cd52d7ecee2314e82bca5d541eecf0bc6aee870c8c6f7 AS deps
+FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:b404b0504b0e95ed3610bd33cc1e929baa8f89fe08f8e2666b5d82f2308bc8c2 AS deps
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 #RUN apk add --no-cache libc6-compat
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN \
 
 
 # Rebuild the source code only when needed
-FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:c61b6b12a3c96373673cd52d7ecee2314e82bca5d541eecf0bc6aee870c8c6f7 AS builder
+FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:b404b0504b0e95ed3610bd33cc1e929baa8f89fe08f8e2666b5d82f2308bc8c2 AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -31,7 +31,7 @@ RUN yarn build
 # RUN npm run build
 
 # Production image, copy all the files and run next
-FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:c61b6b12a3c96373673cd52d7ecee2314e82bca5d541eecf0bc6aee870c8c6f7 AS runner
+FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:b404b0504b0e95ed3610bd33cc1e929baa8f89fe08f8e2666b5d82f2308bc8c2 AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
