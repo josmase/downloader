@@ -1,3 +1,12 @@
+## 0.0.10
+
+* b133e05 fix(deps): update nextjs monorepo to v15.1.4 (#109)
+* 2e69e51 fix(deps): update dependency @types/react to v19.0.3 (#107)
+* a0f5692 fix(deps): update dependency @types/node to v22.10.5 (#106)
+* 5ebbc0a fix(deps): update dependency @types/node to v22.10.4
+* 1e6f46d fix(deps): update nextjs monorepo to v15.1.3 (#104)
+* d0cfb0c fix(deps): update dependency swr to v2.3.0
+
 ## 0.0.9
 
 * 103008d chore(deps): update node.js to c61b6b1
