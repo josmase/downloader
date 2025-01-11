@@ -1,3 +1,7 @@
+## 0.0.11
+
+* 1de256d chore(deps): update node.js to 498bf3e (#112)
+
 ## 0.0.10
 
 * b133e05 fix(deps): update nextjs monorepo to v15.1.4 (#109)
