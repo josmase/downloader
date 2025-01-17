@@ -1,3 +1,8 @@
+## 0.0.12
+
+* c7c1bb5 fix(deps): update react monorepo (#116)
+* 4b68d49 fix(deps): update dependency @types/node to v22.10.6
+
 ## 0.0.11
 
 * 1de256d chore(deps): update node.js to 498bf3e (#112)
