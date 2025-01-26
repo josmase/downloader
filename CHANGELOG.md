@@ -1,3 +1,10 @@
+## 0.0.13
+
+* cd26db0 fix(deps): update dependency @types/react to v19.0.8 (#124)
+* fa8cb3e fix(deps): update dependency @types/node to v22.10.10 (#123)
+* 54aa7fa chore(deps): update node.js to 15b885c (#121)
+* a64b28d fix(deps): update nextjs monorepo to v15.1.5 (#119)
+
 ## 0.0.12
 
 * c7c1bb5 fix(deps): update react monorepo (#116)
