@@ -1,3 +1,9 @@
+## 0.0.15
+
+* 1a78230 fix(deps): update dependency eslint to v9.20.1 (#134)
+* 0da2b71 fix(deps): update dependency eslint to v9.20.0 (#133)
+* 3919342 fix(deps): update dependency swr to v2.3.2 (#131)
+
 ## 0.0.14
 
 * 981e021 fix(deps): update dependency @types/node to v22.13.0 (#129)
