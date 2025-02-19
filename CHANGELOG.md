@@ -1,3 +1,8 @@
+## 0.0.16
+
+* d3915d9 fix(deps): update dependency @types/node to v22.13.4 (#137)
+* 44711c8 chore(deps): update node.js to 0a29d8a (#136)
+
 ## 0.0.15
 
 * 1a78230 fix(deps): update dependency eslint to v9.20.1 (#134)
