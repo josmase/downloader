@@ -1,3 +1,7 @@
+## 0.0.19
+
+* 18cfaf9 fix(deps): update dependency @types/node to v22.13.8
+
 ## 0.0.18
 
 * f46c5e0 chore(deps): update node.js to dc4d205 (#144)
