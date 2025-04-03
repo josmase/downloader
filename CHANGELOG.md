@@ -1,3 +1,17 @@
+## 0.0.22
+
+* d45c0ac chore(deps): update dependency @types/wicg-file-system-access to v2023.10.6 (#170)
+* 32ec7a1 fix(deps): update react monorepo to v19.1.0 (#168)
+* 02f41e1 fix(deps): update dependency @types/node to v22.13.14 (#167)
+* d3d700e fix(deps): update nextjs monorepo to v15.2.4 (#166)
+* b3c6f07 fix(deps): update dependency @types/node to v22.13.13 (#165)
+* 92cd327 fix(deps): update dependency eslint to v9.23.0 (#164)
+* e41626f fix(deps): update dependency @types/node to v22.13.11 (#163)
+* f966db9 fix(deps): update dependency @types/react to v19.0.12 (#162)
+* 351175b fix(deps): update nextjs monorepo to v15.2.3 (#161)
+* 53804a9 fix(deps): update dependency @types/react to v19.0.11 (#160)
+* 172b32d chore(deps): update node.js to 6eae672
+
 ## 0.0.21
 
 * 0681207 fix(deps): update nextjs monorepo to v15.2.2
