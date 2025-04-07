@@ -1,3 +1,9 @@
+## 0.0.23
+
+* 374f972 fix(deps): update dependency typescript to v5.8.3
+* 6bc1446 fix(deps): update dependency eslint to v9.24.0 (#173)
+* b070c1a fix(deps): update dependency @types/node to v22.14.0 (#171)
+
 ## 0.0.22
 
 * d45c0ac chore(deps): update dependency @types/wicg-file-system-access to v2023.10.6 (#170)
