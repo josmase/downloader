@@ -1,3 +1,9 @@
+## 0.0.24
+
+* 7e0d98f fix(deps): update react monorepo (#179)
+* 7ca9e83 fix(deps): update dependency @types/node to v22.14.1 (#180)
+* 141f8dd fix(deps): update nextjs monorepo to v15.3.0 (#178)
+
 ## 0.0.23
 
 * 374f972 fix(deps): update dependency typescript to v5.8.3
