@@ -1,3 +1,7 @@
+## 0.0.25
+
+* e0f4401 fix(deps): update dependency @types/react to v19.1.2 (#182)
+
 ## 0.0.24
 
 * 7e0d98f fix(deps): update react monorepo (#179)
