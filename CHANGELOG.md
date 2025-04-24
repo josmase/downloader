@@ -1,3 +1,7 @@
+## 0.0.27
+
+* 33d1586 fix(deps): update dependency eslint to v9.25.1 (#187)
+
 ## 0.0.26
 
 * b18cc72 fix(deps): update dependency eslint to v9.25.0 (#185)
