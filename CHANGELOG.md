@@ -1,3 +1,7 @@
+## 0.0.29
+
+* efeb4c4 fix(deps): update dependency @types/node to v22.15.3 (#191)
+
 ## 0.0.28
 
 * 1f59420 fix(deps): update dependency @types/node to v22.15.2 (#189)
