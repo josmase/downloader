@@ -1,3 +1,9 @@
+## 0.0.32
+
+* 043faa8 fix(deps): update nextjs monorepo to v15.3.2 (#199)
+* fdd3b65 fix(deps): update dependency @types/node to v22.15.15 (#197)
+* 38e18fc fix(deps): update dependency @types/react to v19.1.3 (#198)
+
 ## 0.0.31
 
 * 318b447 fix(deps): update dependency eslint to v9.26.0 (#195)
