@@ -1,3 +1,7 @@
+## 0.0.34
+
+* cb812bb fix(deps): update react monorepo to v19.1.4 (#203)
+
 ## 0.0.33
 
 * ce54597 fix(deps): update dependency @types/node to v22.15.17 (#201)
