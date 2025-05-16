@@ -1,3 +1,9 @@
+## 0.0.35
+
+* 5dfc7ce chore(deps): update node.js to 931edbc (#208)
+* 26a310c fix(deps): update dependency @types/node to v22.15.18 (#206)
+* 1c86538 fix(deps): update dependency @types/react-dom to v19.1.5 (#205)
+
 ## 0.0.34
 
 * cb812bb fix(deps): update react monorepo to v19.1.4 (#203)
