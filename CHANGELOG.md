@@ -1,3 +1,8 @@
+## 0.0.36
+
+* 9956b11 fix(deps): update dependency eslint to v9.27.0 (#210)
+* b90f712 chore(deps): update node.js to 139be64 (#209)
+
 ## 0.0.35
 
 * 5dfc7ce chore(deps): update node.js to 931edbc (#208)
