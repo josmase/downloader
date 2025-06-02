@@ -1,3 +1,8 @@
+## 0.0.41
+
+* 0fadee8 fix(deps): update dependency eslint to v9.28.0 (#223)
+* afc8384 chore(deps): update node.js to a34e14e (#222)
+
 ## 0.0.40
 
 * 1d71a16 fix(deps): update nextjs monorepo to v15.3.3 (#219)
