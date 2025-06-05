@@ -1,3 +1,7 @@
+## 0.0.42
+
+* 653a6cd fix(deps): update dependency @types/react-dom to v19.1.6 (#225)
+
 ## 0.0.41
 
 * 0fadee8 fix(deps): update dependency eslint to v9.28.0 (#223)
