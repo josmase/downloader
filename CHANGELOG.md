@@ -1,3 +1,7 @@
+## 0.0.43
+
+* fd8a3b7 fix(deps): update dependency @types/node to v22.15.30 (#227)
+
 ## 0.0.42
 
 * 653a6cd fix(deps): update dependency @types/react-dom to v19.1.6 (#225)
