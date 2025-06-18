@@ -1,3 +1,9 @@
+## 0.0.44
+
+* 3eab71d fix(deps): update dependency eslint to v9.29.0 (#231)
+* acff376 fix(deps): update dependency @types/react to v19.1.8 (#229)
+* 5ac8232 fix(deps): update dependency @types/node to v22.15.32 (#230)
+
 ## 0.0.43
 
 * fd8a3b7 fix(deps): update dependency @types/node to v22.15.30 (#227)
