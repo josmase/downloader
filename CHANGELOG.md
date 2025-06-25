@@ -1,3 +1,7 @@
+## 0.0.46
+
+* 690e330 fix(deps): update dependency @types/node to v22.15.33 (#235)
+
 ## 0.0.45
 
 * bb64361 fix(deps): update nextjs monorepo to v15.3.4 (#233)
