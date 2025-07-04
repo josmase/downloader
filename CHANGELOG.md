@@ -1,3 +1,7 @@
+## 0.0.49
+
+* 1c50c97 fix(deps): update dependency swr to v2.3.4 (#243)
+
 ## 0.0.48
 
 * 255201a fix(deps): update dependency @types/node to v22.16.0 (#241)
