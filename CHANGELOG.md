@@ -1,3 +1,7 @@
+## 0.0.50
+
+* 42e7426 fix(deps): update nextjs monorepo to v15.3.5 (#244)
+
 ## 0.0.49
 
 * 1c50c97 fix(deps): update dependency swr to v2.3.4 (#243)
