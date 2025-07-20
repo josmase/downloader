@@ -1,3 +1,8 @@
+## 0.0.54
+
+* cd7dd2a fix(deps): update dependency @types/node to v22.16.5 (#255)
+* ebed430 fix(deps): update nextjs monorepo to v15.4.2 (#254)
+
 ## 0.0.53
 
 * 2d08711 fix(deps): update dependency @types/node to v22.16.4 (#252)
