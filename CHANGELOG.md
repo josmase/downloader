@@ -1,3 +1,7 @@
+## 0.0.57
+
+* efadb4e fix(deps): update dependency eslint to v9.32.0 (#260)
+
 ## 0.0.56
 
 * 15408e4 fix(deps): update nextjs monorepo to v15.4.4 (#259)
