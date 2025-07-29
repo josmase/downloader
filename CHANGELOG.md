@@ -1,3 +1,7 @@
+## 0.0.58
+
+* 7431045 fix(deps): update react monorepo to v19.1.1 (#263)
+
 ## 0.0.57
 
 * efadb4e fix(deps): update dependency eslint to v9.32.0 (#260)
