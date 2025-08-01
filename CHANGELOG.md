@@ -1,3 +1,8 @@
+## 0.0.59
+
+* ac6babb fix(deps): update react monorepo (#266)
+* b8261af fix(deps): update nextjs monorepo to v15.4.5 (#265)
+
 ## 0.0.58
 
 * 7431045 fix(deps): update react monorepo to v19.1.1 (#263)
