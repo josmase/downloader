@@ -1,3 +1,7 @@
+## 0.0.60
+
+* bd19f55 fix(deps): update dependency typescript to v5.9.2 (#269)
+
 ## 0.0.59
 
 * ac6babb fix(deps): update react monorepo (#266)
