@@ -1,3 +1,7 @@
+## 0.0.61
+
+* a18e7af fix(deps): update nextjs monorepo to v15.4.6 (#271)
+
 ## 0.0.60
 
 * bd19f55 fix(deps): update dependency typescript to v5.9.2 (#269)
