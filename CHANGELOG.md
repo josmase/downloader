@@ -1,3 +1,9 @@
+## 0.0.62
+
+* b13613a fix(deps): update dependency eslint to v9.33.0 (#274)
+* b4c25df fix(deps): update dependency swr to v2.3.5 (#275)
+* aee8003 fix(deps): update dependency @types/node to v22.17.1 (#273)
+
 ## 0.0.61
 
 * a18e7af fix(deps): update nextjs monorepo to v15.4.6 (#271)
