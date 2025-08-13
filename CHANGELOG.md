@@ -1,3 +1,8 @@
+## 0.0.63
+
+* 8f7ebbe fix(deps): update dependency swr to v2.3.6 (#278)
+* a9c0045 fix(deps): update dependency @types/react to v19.1.10 (#277)
+
 ## 0.0.62
 
 * b13613a fix(deps): update dependency eslint to v9.33.0 (#274)
