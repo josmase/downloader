@@ -1,3 +1,7 @@
+## 0.0.66
+
+* 5314101 fix(deps): update nextjs monorepo to v15.5.0 (#284)
+
 ## 0.0.65
 
 * 918e7f8 fix(deps): update nextjs monorepo to v15.4.7 (#282)
