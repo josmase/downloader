@@ -1,3 +1,7 @@
+## 0.0.70
+
+* c1582b2 fix(deps): update dependency @types/node to v22.18.1 (#295)
+
 ## 0.0.69
 
 * 0ec0b74 fix(deps): update react monorepo (#293)
