@@ -1,3 +1,8 @@
+## 0.0.80
+
+* 0f32e00 chore(deps): update dependency @types/wicg-file-system-access to v2023.10.7 (#321)
+* c85aa04 fix(deps): update dependency eslint to v9.37.0 (#320)
+
 ## 0.0.79
 
 * aa3fe09 fix(deps): update react monorepo to v19.2.0 (#315)
