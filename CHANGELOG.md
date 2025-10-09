@@ -1,3 +1,7 @@
+## 0.0.81
+
+* 94a0f1a fix(deps): update react monorepo (#323)
+
 ## 0.0.80
 
 * 0f32e00 chore(deps): update dependency @types/wicg-file-system-access to v2023.10.7 (#321)
