@@ -1,3 +1,7 @@
+## 0.0.86
+
+* d51060b fix(deps): update dependency eslint to v9.38.0 (#335)
+
 ## 0.0.85
 
 * a38f8f8 fix(deps): update nextjs monorepo to v15.5.6 (#333)
