@@ -1,3 +1,7 @@
+## 0.0.87
+
+* f746ae8 fix(deps): update dependency @types/node to v22.18.12 (#337)
+
 ## 0.0.86
 
 * d51060b fix(deps): update dependency eslint to v9.38.0 (#335)
