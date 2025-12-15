@@ -26,10 +26,10 @@ jobs:
     with:
       image-version: ${{ github.ref_name }}
       image-name: ${{ github.repository }}
-      file-path: apps/production/downloader/deployment.yaml
+      file-path: apps/production/downloader/helmrelease.yaml
       repository: josmase/flux
       namespace: default
-      kind: deployment
+      kind: helmrelease
       name: downloader
     secrets:
       github-token: ${{ secrets.AUTO_DEPLOY_PAT }}
