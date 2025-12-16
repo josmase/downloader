@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - "v*.*.*"
+  workflow_dispatch: # manual trigger
+
 jobs:
   publish:
     uses: josmase/workflows/.github/workflows/docker-build.yaml@main
