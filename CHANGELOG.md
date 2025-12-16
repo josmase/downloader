@@ -1,3 +1,7 @@
+## 0.0.88
+
+* 976af43 fix(deps): update dependency next to v15.5.8 [security] (#346)
+
 ## 0.0.87
 
 * f746ae8 fix(deps): update dependency @types/node to v22.18.12 (#337)
