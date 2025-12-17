@@ -1,3 +1,7 @@
+## 0.0.89
+
+* 161bbbe fix(deps): update dependency eslint-config-next to v15.5.9 (#347)
+
 ## 0.0.88
 
 * 976af43 fix(deps): update dependency next to v15.5.8 [security] (#346)
