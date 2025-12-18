@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@types/node": "22.18.12",
-    "@types/react": "19.2.2",
-    "@types/react-dom": "19.2.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
     "eslint": "9.38.0",
     "eslint-config-next": "15.5.9",
     "next": "15.5.8",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "swr": "^2.0.0",
     "typescript": "5.9.3",
     "ytdl-core": "^4.11.2"
