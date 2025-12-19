@@ -1,3 +1,10 @@
+## 0.0.90
+
+* 0396210 fix(deps): update dependency eslint to v9.39.2 (#343)
+* c70699c fix(deps): update dependency @types/node to v22.19.3 (#342)
+* d8da02c fix(deps): update react monorepo (#344)
+* 0e2b2c4 fix(deps): update dependency swr to v2.3.8 (#345)
+
 ## 0.0.89
 
 * 161bbbe fix(deps): update dependency eslint-config-next to v15.5.9 (#347)
