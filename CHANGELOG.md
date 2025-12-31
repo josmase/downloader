@@ -1,3 +1,7 @@
+## 0.0.91
+
+* 58f01ee chore(deps): update dependency next to v15.5.9 [security] (#350)
+
 ## 0.0.90
 
 * 0396210 fix(deps): update dependency eslint to v9.39.2 (#343)
