@@ -1,3 +1,7 @@
+## 0.0.92
+
+* 47f8385 fix(deps): update dependency @types/node to v24 (#341)
+
 ## 0.0.91
 
 * 58f01ee chore(deps): update dependency next to v15.5.9 [security] (#350)
