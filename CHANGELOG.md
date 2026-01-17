@@ -1,3 +1,7 @@
+## 0.0.94
+
+* 861b9fc fix(deps): update dependency @types/node to v24.10.9 (#359)
+
 ## 0.0.93
 
 * 571a61d fix(deps): update dependency @types/react to v19.2.8 (#357)
