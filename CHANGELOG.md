@@ -1,3 +1,7 @@
+## 0.0.95
+
+* 0539db0 fix(deps): update nextjs monorepo to v16 (#338)
+
 ## 0.0.94
 
 * 861b9fc fix(deps): update dependency @types/node to v24.10.9 (#359)
