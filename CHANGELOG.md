@@ -1,3 +1,7 @@
+## 0.0.96
+
+* ece9fe4 fix(deps): update nextjs monorepo to v16.1.4 (#361)
+
 ## 0.0.95
 
 * 0539db0 fix(deps): update nextjs monorepo to v16 (#338)
