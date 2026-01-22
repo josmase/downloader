@@ -1,3 +1,7 @@
+## 0.0.97
+
+* e62e3c4 fix(deps): update dependency @types/react to v19.2.9 (#363)
+
 ## 0.0.96
 
 * ece9fe4 fix(deps): update nextjs monorepo to v16.1.4 (#361)
