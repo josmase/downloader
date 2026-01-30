@@ -1,3 +1,9 @@
+## 0.0.98
+
+* a919d31 fix(deps): update react monorepo (#368)
+* 7d6e3b4 fix(deps): update nextjs monorepo to v16.1.6 (#367)
+* a303a86 fix(deps): update dependency next to v16.1.5 [security] (#369)
+
 ## 0.0.97
 
 * e62e3c4 fix(deps): update dependency @types/react to v19.2.9 (#363)
