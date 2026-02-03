@@ -1,3 +1,7 @@
+## 0.0.99
+
+* 1a26e6c fix(deps): update dependency swr to v2.4.0 (#371)
+
 ## 0.0.98
 
 * a919d31 fix(deps): update react monorepo (#368)
