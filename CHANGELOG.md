@@ -1,3 +1,8 @@
+## 0.0.100
+
+* 621255c fix(deps): update dependency @types/react to v19.2.13 (#374)
+* 2bd7320 fix(deps): update dependency @types/node to v24.10.10 (#373)
+
 ## 0.0.99
 
 * 1a26e6c fix(deps): update dependency swr to v2.4.0 (#371)
