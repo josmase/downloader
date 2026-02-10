@@ -1,3 +1,7 @@
+## 0.0.102
+
+* 3fc4a80 fix(deps): update dependency @types/node to v24.10.12 (#379)
+
 ## 0.0.101
 
 * 1f87a59 fix(deps): update dependency @types/node to v24.10.11 (#376)
