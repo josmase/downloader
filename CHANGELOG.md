@@ -1,3 +1,8 @@
+## 0.0.103
+
+* bbedcee fix(deps): update dependency @types/react to v19.2.14 (#382)
+* 20bc07d fix(deps): update dependency @types/node to v24.10.13 (#381)
+
 ## 0.0.102
 
 * 3fc4a80 fix(deps): update dependency @types/node to v24.10.12 (#379)
