@@ -1,3 +1,7 @@
+## 0.0.104
+
+* af080f5 fix(deps): update dependency eslint to v9.39.3 (#384)
+
 ## 0.0.103
 
 * bbedcee fix(deps): update dependency @types/react to v19.2.14 (#382)
