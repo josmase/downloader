@@ -1,5 +1,5 @@
 # Install dependencies only when needed
-FROM artifactory.local.hejsan.xyz/docker/node:23-alpine@sha256:a34e14ef1df25b58258956049ab5a71ea7f0d498e41d0b514f4b8de09af09456 AS deps
+FROM artifactory.local.hejsan.xyz/docker/node:23-alpine AS deps
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 #RUN apk add --no-cache libc6-compat
 WORKDIR /app
