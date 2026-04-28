@@ -24,18 +24,14 @@ jobs:
 
   deploy:
     needs: publish
-    uses: josmase/workflows/.github/workflows/deploy.yaml@main
+    uses: josmase/workflows/.github/workflows/deploy-in-repo.yaml@main
     with:
       image-version: ${{ github.ref_name }}
-      image-name: ${{ github.repository }}
-      file-path: apps/production/downloader/helmrelease.yaml
-      repository: josmase/flux
+      image-name: artifactory.local.hejsan.xyz/docker/josmase/downloader
+      file-path: deploy/base/deployment.yaml
       namespace: default
-      kind: helmrelease
+      kind: deployment
       name: downloader
-    secrets:
-      github-token: ${{ secrets.AUTO_DEPLOY_PAT }}
-      kubeconfig: ${{ secrets.KUBECONFIG }}
     permissions:
-      contents: read
+      contents: write
       deployments: write
