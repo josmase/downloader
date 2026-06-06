@@ -1,6 +1,6 @@
 include:
   - project: 'josmase/infrastructure/ci-templates'
-    ref: 'v3.0.4'
+    ref: 'v3.0.5'
     file: 'pipelines/standard.yml'
 
 tag-release:
@@ -11,6 +11,6 @@ tag-release:
     - if: '$CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+$/'
 
 variables:
-  FLUX_REPO_PATH: "josmase/infrastructure/flux"
-  MANIFEST_PATH: "apps/base/downloader/deployment.yaml"
+  DEPLOY_REPO_PATH: "$CI_PROJECT_PATH"
+  MANIFEST_PATH: "deploy/base/deployment.yaml"
   IMAGE_PATH: "spec.template.spec.containers[0].image"
