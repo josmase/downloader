@@ -1,14 +1,16 @@
 include:
   - project: 'josmase/infrastructure/ci-templates'
-    ref: 'v1.0.0'
-    file: 'templates/docker-build.yml'
+    ref: 'v3.0.0'
+    file: 'pipelines/standard.yml'
 
-stages:
-  - publish
-
-publish:
+tag-release:
   extends: .docker-build
   variables:
     IMAGE_TAG: $CI_COMMIT_TAG
   rules:
     - if: '$CI_COMMIT_TAG =~ /^v\d+\.\d+\.\d+$/'
+
+variables:
+  FLUX_REPO_PATH: "josmase/infrastructure/flux"
+  MANIFEST_PATH: "apps/base/downloader/deployment.yaml"
+  IMAGE_PATH: "spec.template.spec.containers[0].image"
