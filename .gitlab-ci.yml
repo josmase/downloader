@@ -3,6 +3,9 @@ include:
     ref: 'v1.0.0'
     file: 'templates/docker-build.yml'
 
+stages:
+  - publish
+
 publish:
   extends: .docker-build
   variables:
