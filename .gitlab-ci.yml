@@ -1,6 +1,6 @@
 include:
   - project: 'josmase/infrastructure/ci-templates'
-    ref: 'v3.0.0'
+    ref: 'v3.0.1'
     file: 'pipelines/standard.yml'
 
 tag-release:
