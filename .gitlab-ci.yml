@@ -14,3 +14,4 @@ variables:
   FLUX_REPO_PATH: "josmase/infrastructure/flux"
   MANIFEST_PATH: "apps/base/downloader/deployment.yaml"
   IMAGE_PATH: "spec.template.spec.containers[0].image"
+  KANIKO_EXTRA_FLAGS: "--cache=true"
